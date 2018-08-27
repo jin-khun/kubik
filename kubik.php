@@ -39,7 +39,7 @@ for ($x=0; $x <1; $x++) {
 		echo "[+] Mengambil data artikel (CID : ".$cid.") ==> ".count(array_unique($artikel))."\r\n";
 	}
 	while (TRUE) {
-		$timeIn30Minutes = time() + 30*60;
+		$timeIn30Minutes = time() + 40*60;
 		$rnd 	= array_rand($artikel); 
 		$id 	= $artikel[$rnd];
 		$url[] = array(
@@ -59,7 +59,7 @@ for ($x=0; $x <1; $x++) {
 			}
 		}
 		if(count($artikel) == 0){
-			sleep(30);
+			sleep(40);
 			break;
 		}
 		sleep(5);
